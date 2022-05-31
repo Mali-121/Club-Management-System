@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="clubDBDataSet5" targetNamespace="http://tempuri.org/clubDBDataSet5.xsd" xmlns:mstns="http://tempuri.org/clubDBDataSet5.xsd" xmlns="http://tempuri.org/clubDBDataSet5.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="clubDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="clubDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Assignment.Properties.Settings.GlobalReference.Default.clubDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="clubInfoTableAdapter" GeneratorDataComponentClassName="clubInfoTableAdapter" Name="clubInfo" UserDataComponentName="clubInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="clubDBConnectionString (Settings)" DbObjectName="dbo.clubInfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT name, president, vicePresident, representative, description, registeredDate FROM dbo.clubInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="name" DataSetColumn="name" />
+              <Mapping SourceColumn="president" DataSetColumn="president" />
+              <Mapping SourceColumn="vicePresident" DataSetColumn="vicePresident" />
+              <Mapping SourceColumn="representative" DataSetColumn="representative" />
+              <Mapping SourceColumn="description" DataSetColumn="description" />
+              <Mapping SourceColumn="registeredDate" DataSetColumn="registeredDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="clubDBDataSet5" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="clubDBDataSet5" msprop:Generator_UserDSName="clubDBDataSet5">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="clubInfo" msprop:Generator_TableClassName="clubInfoDataTable" msprop:Generator_TableVarName="tableclubInfo" msprop:Generator_TablePropName="clubInfo" msprop:Generator_RowDeletingName="clubInfoRowDeleting" msprop:Generator_RowChangingName="clubInfoRowChanging" msprop:Generator_RowEvHandlerName="clubInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="clubInfoRowDeleted" msprop:Generator_UserTableName="clubInfo" msprop:Generator_RowChangedName="clubInfoRowChanged" msprop:Generator_RowEvArgName="clubInfoRowChangeEvent" msprop:Generator_RowClassName="clubInfoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="president" msprop:Generator_ColumnVarNameInTable="columnpresident" msprop:Generator_ColumnPropNameInRow="president" msprop:Generator_ColumnPropNameInTable="presidentColumn" msprop:Generator_UserColumnName="president">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="vicePresident" msprop:Generator_ColumnVarNameInTable="columnvicePresident" msprop:Generator_ColumnPropNameInRow="vicePresident" msprop:Generator_ColumnPropNameInTable="vicePresidentColumn" msprop:Generator_UserColumnName="vicePresident">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="representative" msprop:Generator_ColumnVarNameInTable="columnrepresentative" msprop:Generator_ColumnPropNameInRow="representative" msprop:Generator_ColumnPropNameInTable="representativeColumn" msprop:Generator_UserColumnName="representative">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="description" msprop:Generator_ColumnVarNameInTable="columndescription" msprop:Generator_ColumnPropNameInRow="description" msprop:Generator_ColumnPropNameInTable="descriptionColumn" msprop:Generator_UserColumnName="description">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="registeredDate" msprop:Generator_ColumnVarNameInTable="columnregisteredDate" msprop:Generator_ColumnPropNameInRow="registeredDate" msprop:Generator_ColumnPropNameInTable="registeredDateColumn" msprop:Generator_UserColumnName="registeredDate">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
